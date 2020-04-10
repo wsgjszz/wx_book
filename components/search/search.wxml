@@ -1,0 +1,4 @@
+<!--components/search/search.wxml-->
+<view class="sec">
+<input class="search"/>
+</view>

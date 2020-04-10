@@ -1,0 +1,29 @@
+
+/* .bookshop{
+  display: flex;
+  justify-content: space-evenly;均匀平铺
+  flex-wrap: wrap;   铺满后是否换行
+}
+.bookshop-1{
+  width: 110px;
+  height: 150px;
+  border: 1px solid red;
+}
+.bookshop-2{
+  width: 110px;
+  height: 150px;
+}
+.bookshop-3{
+  width: 110px;
+  height: 150px;
+}
+text{
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif;
+} */
+.content{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}

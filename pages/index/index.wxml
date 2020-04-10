@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view class="sec">
+<!-- 引用component中的search组件 -->
+<z-search/>
+</view>
+<!-- 引用component中的swiper组件 -->
+<z-swiper/>
+<view class="content">
+<z-book/>
+<z-book/>
+<z-book/>
+<z-book/>
+<z-book/>
+</view>
+
+<!-- <view class="bookshop">
+<view class="bookshop-1">
+<image src="{{bookImg}}" mode="widthFix"></image>
+<text>{{bookName}}</text>
+</view>
+<view class="bookshop-2">
+<image src="../../assets/images/tamude.jpg" mode="widthFix"></image>
+<text>塔木德经典故事</text>
+</view>
+<view class="bookshop-3">
+<image src="../../assets/images/xiaowangzi.jpg" mode="widthFix"></image>
+<text>小王子</text>
+</view>
+</view> -->

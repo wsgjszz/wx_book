@@ -1,0 +1,5 @@
+<!--components/book/book.wxml-->
+<view class="bookshop">
+<image src="../../assets/images/xifangzhexueshi.jpg" mode="widthFix"/>
+<text>西方哲学史</text>
+</view>

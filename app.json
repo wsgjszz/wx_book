@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/book/index",
+    "pages/search/index",
+    "pages/me/index",
+    "components/search/search"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#4682B4",
+    "navigationBarTitleText": "快悦读",
+    "navigationBarTextStyle": "white" ,
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "selectedColor": "#4682B4",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icons/home.png",
+        "selectedIconPath": "icons/home-.png"
+      },
+      {
+        "pagePath": "pages/book/index",
+        "text": "书架",
+        "iconPath": "icons/books.png",
+        "selectedIconPath": "icons/books-.png"
+      },
+      {
+        "pagePath": "pages/search/index",
+        "text": "发现",
+        "iconPath": "icons/search.png",
+        "selectedIconPath": "icons/search-.png"
+      },
+      {
+        "pagePath": "pages/me/index",
+        "text": "我的",
+        "iconPath": "icons/my.png",
+        "selectedIconPath": "icons/my-.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,10 @@
+/* components/book/book.wxss */
+.bookshop{
+  width: 110px;
+  height: 150px;
+  border: 1px solid red;
+}
+.bookshop image{
+  width: 100%;
+  
+}

@@ -1,0 +1,12 @@
+/* components/search/search.wxss */
+.sec{
+  width: 100%;
+  height: 30px;
+  background-color: #4682B4;
+}
+.search{
+  width: 80%;
+  background-color: white;
+  border-radius: 10px;
+  padding-left: 7px;
+}
