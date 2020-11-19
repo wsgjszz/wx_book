@@ -1,2 +1,18 @@
-<!--pages/book/index.wxml-->
-<text>pages/book/index.wxml</text>
+<view>
+  <!-- 搜索框 -->
+  <b-search/>
+  <!-- 书籍 -->
+  <view class="content" wx:if="{{isShow}}">
+    <block wx:for="{{book}}">
+      <navigator url="../../pages/detail/index?bookId={{item.bookId}}">
+        <view class="book">
+          <image src="{{item.bookImage}}" mode="widthFix" />
+          <text>{{item.bookName}}</text>
+        </view>
+      </navigator>
+    </block>
+  </view>
+  <view class="empty" wx:else>
+    <view>书架还是空的，赶紧添加喜欢的书~</view>
+  </view>
+</view>

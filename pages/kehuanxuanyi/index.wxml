@@ -1,0 +1,14 @@
+<!--pages/kehuanxuanyi/index.wxml-->
+<view>
+  <view class="title">科幻悬疑类</view>
+  <view class="content">
+    <block wx:for="{{test}}">
+      <navigator url="../../pages/detail/index?bookId={{item._id}}">
+        <view class="book">
+          <image src="{{item.bookImg}}" mode="widthFix" />
+          <text>{{item.bookName}}</text>
+        </view>
+      </navigator>
+    </block>
+  </view>
+</view>

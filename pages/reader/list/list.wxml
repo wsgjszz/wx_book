@@ -1,0 +1,17 @@
+<!--pages/reader/list/list.wxml-->
+<view class="list">
+  <view class="bookName">{{bookName}}</view>
+  <!-- 遍历标题 -->
+  <view class="titles" wx:for="{{titles}}">
+    <!-- 判断当前页码和title的下标是否相同，即判断当前章节然后显示不同样式 -->
+    <view wx:if="{{currentPage==index}}" class="title-item-on">
+      <navigator url="#"
+       bindtap="toReader" data-index="{{index}}" data-id="{{bookId}}">{{item}}</navigator>
+    </view>
+    <view wx:else class="title-item">
+      <navigator url="#" 
+      bindtap="toReader" data-index="{{index}}" data-id="{{bookId}}">{{item}}</navigator>
+    </view>
+  </view>
+</view>
+

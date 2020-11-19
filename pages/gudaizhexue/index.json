@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "g-swiper": "../../components/swiper/swiper",
+    "g-search": "../../components/search/search"
+  }
+}

@@ -1,18 +1,39 @@
 <!--index.wxml-->
-<view class="sec">
-<!-- 引用component中的search组件 -->
-<z-search/>
-</view>
-<!-- 引用component中的swiper组件 -->
-<z-swiper/>
-<view class="content">
-<z-book/>
-<z-book/>
-<z-book/>
-<z-book/>
-<z-book/>
+<view class="contenter">
+  <view class="sec">
+    <!-- 引用component中的search组件 搜索组件-->
+    <z-search/>
+  </view>
+  <!-- 引用component中的swiper组件 轮播图-->
+  <view>
+    <z-swiper/>
+  </view>
+  <!-- 分类 -->
+  <view class="fenlei">
+    <navigator url="../../pages/gudaizhexue/index">
+      <text>古代哲学类丨</text> </navigator>
+    <navigator url="../../pages/xianshixiaoshuo/index">
+      <text>小说文学类丨</text> </navigator>
+    <navigator url="../../pages/kehuanxuanyi/index">
+      <text>科幻悬疑类丨</text> </navigator>
+    <navigator url="../../pages/jingdanwenxue/index">
+      <text>科普百科类</text> </navigator>
+  </view>
+  <!-- 内容 -->
+  <view class="content">
+    <block wx:for="{{test}}">
+      <!-- 传递bookId，用来让书籍详情页根据bookId查询对应书籍信息 -->
+      <navigator url="../../pages/detail/index?bookId={{item._id}}">
+        <view class="book">
+          <image src="{{item.bookImg}}" mode="widthFix" />
+          <text>{{item.bookName}}</text>
+        </view>
+      </navigator>
+    </block>
+  </view>
 </view>
 
+<!-- 利用原始方法前后端交互时需要使用域名，在组件的属性列表中定义一个属性生命此属性是外界属性，类型为object然后在组件的wxml中利用双大括号语法取数据 -->
 <!-- <view class="bookshop">
 <view class="bookshop-1">
 <image src="{{bookImg}}" mode="widthFix"></image>

@@ -1,0 +1,39 @@
+<!--pages/detail/index.wxml-->
+<view class="detail">
+  <view class="up">
+    <image src="{{bookImage}}"></image>
+    <text class="bookName">{{bookName}}</text>
+    <text class="bookAuthor">{{bookAuthor}}</text>
+    <text wx:if="{{!hasBuy}}" class="cost">购买需{{cost}}积分</text>
+  </view>
+  <view class="down">
+    <view style="margin-left:40rpx;">简介：</view>
+    <view class="jieshao">
+      {{jianjie}}
+    </view>
+    <view class="bottom">
+    
+      <view class="yuedu">
+        <button bindtap="goToReader" style=" width:250rpx">
+          <text wx:if="{{hasBuy}}">立即阅读</text>
+          <text wx:else>购买</text>
+        </button>
+      </view>
+      <!-- <button style=" width:250rpx" bindtap="xiangdu">想读</button> -->
+      <view class="xiangdu" bindtap="xiangdu" wx:if="{{hasSC}}">
+        <image src="../../icons/shoucang-.png" mode="widthFix"></image>
+        <text >已收藏</text>
+      </view>
+      <view class="xiangdu" bindtap="xiangdu" wx:else>
+        <image src="../../icons/shoucang.png" mode="widthFix"></image>
+        <text >想读</text>
+      </view>
+      <view class="jiaru">
+        <button bindtap="addshujia" style="width:250rpx">
+          <text wx:if="{{hasSJ}}">移出书架</text>
+          <text wx:else>加入书架</text>
+        </button>
+      </view>
+    </view>
+  </view>
+</view>

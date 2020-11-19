@@ -1,0 +1,19 @@
+<!--pages/Result/index.wxml-->
+<view>
+  <view wx:if="{{hasResult}}">
+    <view class="title">搜索结果</view>
+    <view class="content">
+      <block wx:for="{{book}}">
+        <navigator url="../../pages/detail/index?bookId={{item._id}}">
+          <view class="book">
+            <image src="{{item.bookImg}}" mode="widthFix" />
+            <text>{{item.bookName}}</text>
+          </view>
+        </navigator>
+      </block>
+    </view>
+  </view>
+  <view class="empty" wx:else>
+    <view>搜索结果为空~</view>
+  </view>
+</view>

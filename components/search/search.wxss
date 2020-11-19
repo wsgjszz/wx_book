@@ -5,8 +5,14 @@
   background-color: #4682B4;
 }
 .search{
-  width: 80%;
+  width: 600rpx;
   background-color: white;
-  border-radius: 10px;
-  padding-left: 7px;
+  border-radius: 20rpx;
+  padding-left: 14rpx;
+}
+.icon{
+  width: 60rpx;
+  height: 60rpx;
+  margin: 0 10rpx;
+  float: left;
 }

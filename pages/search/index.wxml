@@ -1,2 +1,27 @@
 <!--pages/search/index.wxml-->
-<text>pages/search/index.wxml</text>
+<view class="main">
+<view>
+<text>猜你喜欢</text>
+<block >
+<navigator url="">
+<view class="book">
+<image src="" mode="widthFix"/>
+<text></text>
+</view>
+</navigator>
+</block>
+</view>
+
+<view>
+<text>新书推荐</text>
+<block >
+<navigator url="">
+<view class="book">
+<image src="" mode="widthFix"/>
+<text></text>
+</view>
+</navigator>
+</block>
+</view>
+
+</view>

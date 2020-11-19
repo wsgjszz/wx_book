@@ -1,0 +1,153 @@
+<!--pages/reader/reader.wxml-->
+<view wx:if="{{bgColor==0}}" class="reader white">
+  <view class="context" bindtap="showSetting">
+    <view class="title">{{title[page]}}</view>
+    <rich-text wx:if="{{fontSize==0}}" class="bigFont">{{context[page]}}</rich-text>
+    <rich-text wx:if="{{fontSize==1}}" class="midFont">{{context[page]}}</rich-text>
+    <rich-text wx:if="{{fontSize==2}}" class="smlFont">{{context[page]}}</rich-text>
+  </view>
+  <view class="bottom">
+    <button bindtap="lastPage" type="default" size="mini">上一章</button>
+    <button bindtap="goToList" type="primary" size="mini">目录</button>
+    <button bindtap="nextPage" type="default" size="mini">下一章</button>
+  </view>
+  <!-- 设置界面 -->
+  <view class="setting" wx:if="{{isHidden}}">
+    <view class="base">
+      <text catchtap="lastPage">上一章</text>
+      <text catchtap="goToList" style="color:red;">{{title[page]}}</text>
+      <text catchtap="nextPage">下一章</text>
+    </view>
+    <view class="font">
+      <text class="font-text">字号</text>
+      <view class="fonts">
+        <text catchtap="bigSize">大</text>
+        <text catchtap="middleSize">中</text>
+        <text catchtap="smallSize">小</text>
+      </view>
+    </view>
+    <view class="color">
+      <text>背景色</text>
+      <view class="icons">
+        <icon type="success" color="#ece8e8" size="24" catchtap="color0"></icon>
+        <icon type="success" color="#e4dfcc" size="24" catchtap="color1"></icon>
+        <icon type="success" color="#c8edcc" size="24" catchtap="color2"></icon>
+        <icon type="success" color="#010101" size="24" catchtap="color3"></icon>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{bgColor==1}}" class="reader brown">
+  <view class="context" bindtap="showSetting">
+    <view class="title">{{title[page]}}</view>
+    <view wx:if="{{fontSize==0}}" class="bigFont">{{context[page]}}</view>
+    <view wx:if="{{fontSize==1}}" class="midFont">{{context[page]}}</view>
+    <view wx:if="{{fontSize==2}}" class="smlFont">{{context[page]}}</view>
+  </view>
+  <view class="bottom">
+    <button bindtap="lastPage" type="default" size="mini">上一章</button>
+    <button bindtap="goToList" type="primary" size="mini">目录</button>
+    <button bindtap="nextPage" type="default" size="mini">下一章</button>
+  </view>
+  <!-- 设置界面 -->
+  <view class="setting" wx:if="{{isHidden}}">
+    <view class="base">
+      <text catchtap="lastPage">上一章</text>
+      <text catchtap="goToList" style="color:red;">{{title[page]}}</text>
+      <text catchtap="nextPage">下一章</text>
+    </view>
+    <view class="font">
+      <text class="font-text">字号</text>
+      <view class="fonts">
+        <text catchtap="bigSize">大</text>
+        <text catchtap="middleSize">中</text>
+        <text catchtap="smallSize">小</text>
+      </view>
+    </view>
+    <view class="color">
+      <text>背景色</text>
+      <view class="icons">
+        <icon type="success" color="#ece8e8" size="24" catchtap="color0"></icon>
+        <icon type="success" color="#e4dfcc" size="24" catchtap="color1"></icon>
+        <icon type="success" color="#c8edcc" size="24" catchtap="color2"></icon>
+        <icon type="success" color="#010101" size="24" catchtap="color3"></icon>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{bgColor==2}}" class="reader green">
+  <view class="context" bindtap="showSetting">
+    <view class="title">{{title[page]}}</view>
+    <view wx:if="{{fontSize==0}}" class="bigFont">{{context[page]}}</view>
+    <view wx:if="{{fontSize==1}}" class="midFont">{{context[page]}}</view>
+    <view wx:if="{{fontSize==2}}" class="smlFont">{{context[page]}}</view>
+  </view>
+  <view class="bottom">
+    <button bindtap="lastPage" type="default" size="mini">上一章</button>
+    <button bindtap="goToList" type="primary" size="mini">目录</button>
+    <button bindtap="nextPage" type="default" size="mini">下一章</button>
+  </view>
+  <!-- 设置界面 -->
+  <view class="setting" wx:if="{{isHidden}}">
+    <view class="base">
+      <text catchtap="lastPage">上一章</text>
+      <text catchtap="goToList" style="color:red;">{{title[page]}}</text>
+      <text catchtap="nextPage">下一章</text>
+    </view>
+    <view class="font">
+      <text class="font-text">字号</text>
+      <view class="fonts">
+        <text catchtap="bigSize">大</text>
+        <text catchtap="middleSize">中</text>
+        <text catchtap="smallSize">小</text>
+      </view>
+    </view>
+    <view class="color">
+      <text>背景色</text>
+      <view class="icons">
+        <icon type="success" color="#ece8e8" size="24" catchtap="color0"></icon>
+        <icon type="success" color="#e4dfcc" size="24" catchtap="color1"></icon>
+        <icon type="success" color="#c8edcc" size="24" catchtap="color2"></icon>
+        <icon type="success" color="#010101" size="24" catchtap="color3"></icon>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{bgColor==3}}" class="reader black">
+  <view class="context" bindtap="showSetting">
+    <view class="title">{{title[page]}}</view>
+    <view wx:if="{{fontSize==0}}" class="bigFont">{{context[page]}}</view>
+    <view wx:if="{{fontSize==1}}" class="midFont">{{context[page]}}</view>
+    <view wx:if="{{fontSize==2}}" class="smlFont">{{context[page]}}</view>
+  </view>
+  <view class="bottom">
+    <button bindtap="lastPage" type="default" size="mini">上一章</button>
+    <button bindtap="goToList" type="primary" size="mini">目录</button>
+    <button bindtap="nextPage" type="default" size="mini">下一章</button>
+  </view>
+  <!-- 设置界面 -->
+  <view class="setting" wx:if="{{isHidden}}">
+    <view class="base">
+      <text catchtap="lastPage">上一章</text>
+      <text catchtap="goToList" style="color:red;">{{title[page]}}</text>
+      <text catchtap="nextPage">下一章</text>
+    </view>
+    <view class="font">
+      <text class="font-text">字号</text>
+      <view class="fonts">
+        <text catchtap="bigSize">大</text>
+        <text catchtap="middleSize">中</text>
+        <text catchtap="smallSize">小</text>
+      </view>
+    </view>
+    <view class="color">
+      <text>背景色</text>
+      <view class="icons">
+        <icon type="success" color="#ece8e8" size="24" catchtap="color0"></icon>
+        <icon type="success" color="#e4dfcc" size="24" catchtap="color1"></icon>
+        <icon type="success" color="#c8edcc" size="24" catchtap="color2"></icon>
+        <icon type="success" color="#010101" size="24" catchtap="color3"></icon>
+      </view>
+    </view>
+  </view>
+</view>

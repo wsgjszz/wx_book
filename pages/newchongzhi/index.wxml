@@ -1,0 +1,14 @@
+<!--pages/newchongzhi/index.wxml-->
+<view class="pay">
+<view class='money_charge'>
+<button class='{{un_click1}}' bindtap='lv1' style="width: 200rpx;">1元</button>
+<button class='{{un_click2}}' bindtap='lv2' style="width: 200rpx;">5元</button>
+<button class='{{un_click3}}'bindtap='lv3' style="width: 200rpx;">10元</button>
+</view>
+<view class='money_charge'>
+<button class='{{un_click4}}' bindtap='lv4' style="width: 200rpx;">50元</button>
+<button class='{{un_click5}}' bindtap='lv5' style="width: 200rpx;">100元</button>
+<button class='{{un_click6}}'  bindtap='lv6' style="width: 200rpx;">300元</button>
+</view>
+<button class="tijiao" bindtap="pay">微信充值</button>
+</view>

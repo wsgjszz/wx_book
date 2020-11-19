@@ -1,0 +1,27 @@
+/* pages/yigou/index.wxss */
+.content{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+.title{
+  text-align: center;
+  font-size: 38rpx;
+  font-weight: 600;
+  color: #8c8ef5;
+  margin: 10rpx 0 0 40rpx;
+}
+.book{
+  display: flex;
+  flex-direction: column;
+  width: 220rpx;
+  height: 350rpx;
+  /* border: 1rpx solid red; */
+  margin: 15rpx;
+  font-size: 30rpx;
+  text-align: center;
+}
+.book image{
+  width: 220rpx;
+}

@@ -2,8 +2,8 @@
 App({
   onLaunch: function () {
     //云开发环境初始化
-  wx.cloud.init({
-    env:"zjy-h45my"
-  })
+    wx.cloud.init({
+      env: 'zjy-h45my'
+    })
   }
 })

@@ -1,5 +1,5 @@
 <!--components/swiper.wxml-->
-<swiper autoplay interval="1000" circular indicator-dots indicator-color="#4682B4" indicator-active-color="white">
+<swiper class="swiper" autoplay interval="1000" circular indicator-dots indicator-color="#4682B4" indicator-active-color="white">
 <swiper-item> <image mode="widthFix" src="../../assets/images/swiper-1.jpg"></image></swiper-item>
 <swiper-item> <image mode="widthFix" src="../../assets/images/swiper-2.jpg"></image></swiper-item>
 <swiper-item> <image mode="widthFix" src="../../assets/images/swiper-3.jpg"></image></swiper-item>

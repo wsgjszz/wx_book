@@ -1,2 +1,50 @@
-<!--pages/me/index.wxml-->
-<text>pages/me/index.wxml</text>
+<view class="bg">
+  <view class="headImg">
+    <button class="imgButton" open-type='getUserInfo'  bindgetuserinfo='getMyInfo'>
+      <image src="{{src}}"></image>
+    </button>
+    <text>{{name}}</text>
+
+  </view>
+
+
+  <view class="account" bindtap="zhanghu">
+    <image src="../../assets/images/account.png"></image>
+    <text>账户</text>
+    <button class="tiaozhuan" style="width:100rpx;height:100rpx">
+      <image src="../../assets/images/tiaozhuan.png"></image>
+    </button>
+  </view>
+  <view class="read">
+    <view class="read-1" bindtap="yigou">
+      <image src="../../assets/images/yidu.png"></image>
+      <text>已购</text>
+      <button class="tiaozhuan" style="width:100rpx;height:100rpx">
+        <image src="../../assets/images/tiaozhuan.png"></image>
+      </button>
+    </view>
+    <view class="read-1" bindtap="xiangdu">
+      <image src="../../assets/images/xiangdu.png"></image>
+      <text>想读</text>
+      <button class="tiaozhuan" style="width:100rpx;height:100rpx">
+        <image src="../../assets/images/tiaozhuan.png"></image>
+      </button>
+    </view>
+  </view>
+  <view>
+  </view>
+  <!-- <view class="charge">
+    <image src="../../assets/images/chongzhi.png"></image>
+    <text>充值</text>
+    <button class="tiaozhuan" style="width:100rpx;height:100rpx" bindtap="chongzhi">
+      <image src="../../assets/images/tiaozhuan.png"></image>
+    </button>
+  </view> -->
+  <view class="shezhi" bindtap="shezhi">
+    <image src="../../assets/images/shezhi.png"></image>
+    <text>设置</text>
+    <button class="tiaozhuan" style="width:100rpx;height:100rpx" >
+      <image src="../../assets/images/tiaozhuan.png"></image>
+    </button>
+  </view>
+</view>

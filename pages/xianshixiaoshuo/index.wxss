@@ -1,0 +1,27 @@
+/* pages/xianshixiaoshuo/index.wxss */
+.content{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+.book{
+  display: flex;
+  flex-direction: column;
+  width: 220rpx;
+  height: 350rpx;
+  /* border: 1rpx solid red; */
+  margin: 15rpx;
+  font-size: 30rpx;
+  text-align: center;
+}
+.book image{
+  width: 220rpx;
+}
+.title{
+  text-align: center;
+  font-size: 38rpx;
+  font-weight: 600;
+  color: #b4abab;
+  margin: 10rpx 0 0 40rpx;
+}

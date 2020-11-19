@@ -2,8 +2,21 @@
   "pages": [
     "pages/index/index",
     "pages/book/index",
+    "pages/shoucang/index",
+    "pages/yigou/index",
+    "pages/setting/index",
     "pages/search/index",
+    "pages/Result/index",
     "pages/me/index",
+    "pages/gudaizhexue/index",
+    "pages/xianshixiaoshuo/index",
+    "pages/kehuanxuanyi/index",
+    "pages/jingdanwenxue/index",
+    "pages/zhanghu/index",
+    "pages/detail/index",
+    "pages/newchongzhi/index",
+    "pages/reader/reader",
+    "pages/reader/list/list",
     "components/search/search"
   ],
   "window": {
@@ -28,12 +41,6 @@
         "text": "书架",
         "iconPath": "icons/books.png",
         "selectedIconPath": "icons/books-.png"
-      },
-      {
-        "pagePath": "pages/search/index",
-        "text": "发现",
-        "iconPath": "icons/search.png",
-        "selectedIconPath": "icons/search-.png"
       },
       {
         "pagePath": "pages/me/index",

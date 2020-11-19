@@ -1,0 +1,128 @@
+/* pages/setting/index.wxss */
+
+/* pages/me/index.wxss */
+
+.imgButton {
+  background-color: white;
+}
+
+.headImg {
+  width: 100%;
+  height: 400rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 10rpx solid #dcdcdc;
+}
+
+.headImg image {
+  width: 180rpx;
+  height: 180rpx;
+  margin-top: 80rpx;
+  border-radius: 50%;
+}
+
+.headImg text {
+  font-size: 30rpx;
+}
+
+.account {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-bottom: 10rpx solid #dcdcdc;
+  position: relative;
+}
+
+.read {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  /* height: 200rpx; */
+  text-align: center;
+  border-bottom: 10rpx solid #dcdcdc;
+}
+
+.read-1 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100rpx;
+  text-align: center;
+  position: relative;
+}
+
+image {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.charge {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100rpx;
+  text-align: center;
+  position: relative;
+}
+
+.shezhi {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100rpx;
+  text-align: center;
+  position: relative;
+  border-bottom: 10rpx solid #dcdcdc;
+}
+
+.tiaozhuan {
+  background-color: white;
+  text-align: center;
+  position: absolute;
+  right: 0;
+}
+
+.setting-text {
+  font-size: 38rpx;
+  font-weight: 530;
+  padding-left: 20rpx;
+  font-family: 微软雅黑;
+}
+.setting-button{
+  margin-left: 300rpx;
+  width: 160rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  border: 6rpx solid #c5c5c5;
+  overflow: hidden;
+}
+.setting-button .btn-1{
+  border: 2rpx solid #ccc;
+  color: #fff;
+  background-color: #66c6f3;
+  display: inline-block;
+  width: 79rpx;
+  height: 100rpx;
+  overflow: hidden;
+  padding-top: 10rpx;
+}
+.setting-button .btn-2{
+  border: 2rpx solid #ccc;
+  color: #000;
+  background-color: #fff;
+  display: inline-block;
+  width: 79rpx;
+  height: 100rpx;
+  overflow: hidden;
+  padding-top: 10rpx;
+}
+.btn{
+  border: 7rpx solid rgb(179, 173, 173);
+  position: fixed;
+  bottom: 20rpx;
+  left: 170rpx;
+}

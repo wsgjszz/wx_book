@@ -1,4 +1,8 @@
 <!--components/search/search.wxml-->
 <view class="sec">
-<input class="search"/>
+<!-- 导入搜索图标 -->
+  <image class="icon" src="../../assets/images/search.png" mode="aspectFit"></image>
+  <!-- 搜索栏，文本输入框，设置confirm-type类型为search，绑定bindconfirm事件 -->
+  <input class="search" type="text" confirm-type="search" bindconfirm="search"
+  bindinput="getValue" value="{{value}}" placeholder="请输入书名" />
 </view>

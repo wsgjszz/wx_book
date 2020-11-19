@@ -1,0 +1,47 @@
+<!--pages/setting/index.wxml-->
+<view class="bg">
+  <view class="headImg">
+    <button class="imgButton">
+      <image src="{{src}}"></image>
+    </button>
+    <text>{{name}}</text>
+  </view>
+  <view class="account" bindtap="zhanghu">
+    <text class="setting-text">翻页阅读</text>
+    <view class="setting-button" wx:if="{{isShow1}}">
+      <view class="btn-1" catchtap="change1">是</view>
+      <view class="btn-2" catchtap="change1">否</view>
+    </view>
+    <view class="setting-button" wx:else>
+      <view class="btn-2" catchtap="change1">是</view>
+      <view class="btn-1" catchtap="change1">否</view>
+    </view>
+  </view>
+  <view class="read">
+    <view class="read-1" bindtap="yigou">
+      <text class="setting-text">首行缩进</text>
+      <view class="setting-button" wx:if="{{isShow2}}">
+        <view class="btn-1" catchtap="change2">是</view>
+        <view class="btn-2" catchtap="change2">否</view>
+      </view>
+      <view class="setting-button" wx:else>
+        <view class="btn-2" catchtap="change2">是</view>
+        <view class="btn-1" catchtap="change2">否</view>
+      </view>
+    </view>
+  </view>
+  <view>
+  </view>
+  <view class="shezhi" bindtap="shezhi">
+    <text class="setting-text">横屏阅读</text>
+    <view class="setting-button" wx:if="{{isShow3}}">
+      <view class="btn-1" catchtap="change3">是</view>
+      <view class="btn-2" catchtap="change3">否</view>
+    </view>
+    <view class="setting-button" wx:else>
+      <view class="btn-2" catchtap="change3">是</view>
+      <view class="btn-1" catchtap="change3">否</view>
+    </view>
+  </view>
+  <button class="btn" type="warn" bindtap="out">退出登录</button>
+</view>

@@ -1,0 +1,7 @@
+<!--pages/zhanghu/index.wxml-->
+<view class="main">
+  <view class="main-text">当前积分为: <text>{{points}}</text></view>
+</view>
+<view class="bottom">
+  <text>每阅读一分钟获得积分1点,新注册用户赠送20点积分</text>
+</view>

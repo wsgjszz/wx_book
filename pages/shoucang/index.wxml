@@ -1,0 +1,15 @@
+<!--pages/shoucang/index.wxml-->
+<view>
+<view class="title">收藏书籍</view>
+  <!-- 收藏书籍 -->
+  <view class="content">
+    <block wx:for="{{book}}">
+      <navigator url="../../pages/detail/index?bookId={{item.bookId}}">
+        <view class="book">
+          <image src="{{item.bookImage}}" mode="widthFix" />
+          <text>{{item.bookName}}</text>
+        </view>
+      </navigator>
+    </block>
+  </view>
+</view>

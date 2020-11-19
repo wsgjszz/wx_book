@@ -1,4 +1,30 @@
 
+.contenter{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #F5F5F5;
+}
+.sec{
+  align-content: center;
+}
+.fenlei{
+  display: flex;
+  justify-content: space-evenly;
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 150rpx;
+  line-height: 150rpx;
+  align-items: center;
+  /* font-size: 33rpx; */
+  color: 	#A9A9A9;
+  background-color: 	#F5F5F5;
+  margin-top: 10rpx;
+}
+.fenlei text{
+  font-size: 31rpx;
+}
+
 /* .bookshop{
   display: flex;
   justify-content: space-evenly;均匀平铺
@@ -25,5 +51,17 @@ text{
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  
+}
+.book{
+  display: flex;
+  flex-direction: column;
+  width: 220rpx;
+  height: 350rpx;
+  /* border: 1rpx solid red; */
+  margin: 15rpx;
+  font-size: 30rpx;
+  text-align: center;
+}
+.book image{
+  width: 220rpx;
 }

@@ -1,0 +1,109 @@
+/* pages/reader/reader.wxss */
+page{
+  margin: 0;
+  padding: 0;
+}
+.reder{
+  margin: 0 auto;
+  background-color: #ece8e8;
+}
+.title{
+  text-align: center;
+  font-size: 50rpx;
+  font-weight: 700;
+  margin-right: 10%;
+}
+.context{
+  text-indent: 30rpx;
+  font-size: 34rpx;
+  padding: 30rpx 20rpx;
+}
+.bottom{
+  margin: 20rpx 10% 0 10%;
+  padding-bottom: 30rpx;
+  text-align: center;
+  align-items: center;
+  font-size: 32rpx;
+}
+.bottom button{
+  margin: 0 20rpx;
+}
+/*设置界面*/
+.setting{
+  position: fixed;
+  bottom: 0;
+  background-color: #f3f3eb;
+  width: 100%;
+  height: 180rpx;
+  padding: 0 5rpx;
+  box-shadow: 0 -1rpx 25rpx #e2dede;
+  /* 字体设置 */
+  font-size: 35rpx;
+  font-weight: 500;
+}
+/* 上下章部分 */
+.base{
+  height: 60rpx;
+  font-size: 38rpx;
+}
+.base text{
+  margin-right: 200rpx;
+}
+/* 字体设置部分 */
+.font{
+  border-top:2rpx solid #ccc; 
+  border-bottom:2rpx solid #ccc; 
+  height: 50rpx;
+  padding-top: 10rpx;
+}
+.font .fonts{
+  display: inline-block;
+  margin-left: 175rpx;
+}
+.font .fonts text{
+  margin-left: 40rpx;
+}
+/* 颜色设置部分 */
+.color{
+  height: 60rpx;
+}
+.setting .icons{
+  float: right;
+  margin-right: 240rpx;
+}
+.setting .icons icon{
+  margin-left: 20rpx;
+}
+
+/* 用于切换样式 */
+.bigFont{
+  font-size: 44rpx;
+  text-indent: 30rpx;
+  margin: 30rpx 20rpx;
+}
+.midFont{
+  font-size: 34rpx;
+  text-indent: 30rpx;
+  margin: 30rpx 20rpx;
+}
+.smlFont{
+  font-size: 28rpx;
+  text-indent: 30rpx;
+  margin: 30rpx 20rpx;
+}
+.white{
+  background-color: #ece8e8;
+  color: #000;
+}
+.brown{
+  background-color: #e4dfcc;
+  color: #000;
+}
+.green{
+  background-color: #c8edcc;
+  color: #000;
+}
+.black{
+  background-color: #010101;
+  color: #fff;
+}

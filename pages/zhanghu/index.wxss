@@ -1,0 +1,33 @@
+/* pages/zhanghu/index.wxss */
+page{
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+.main{
+  width: 500rpx;
+  height: 150rpx;
+  margin: 15rpx 125rpx;
+  border-radius: 5%;
+  box-shadow: 0px 0px 10px 5px rgba(219, 216, 216, 0.9);
+  align-items: center;
+  text-align: center;
+}
+.main-text{
+  padding-top: 50rpx;
+}
+.main-text text{
+  color: rgb(250, 111, 111);
+  font-size: 38rpx;
+  font-weight: 600;
+}
+.bottom{
+  position: absolute;
+  bottom: 15rpx;
+  margin: 0 20rpx;
+  text-align: center;
+  font-size: 31rpx;
+}
+.bottom-text text{
+  
+}
